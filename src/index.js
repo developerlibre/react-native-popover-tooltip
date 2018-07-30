@@ -260,6 +260,7 @@ class PopoverTooltip extends React.PureComponent<Props, State> {
       labelContainerStyle && labelContainerStyle.backgroundColor
         ? { borderTopColor: labelContainerStyle.backgroundColor }
         : null;
+
     let triangleDown = null;
     let triangleUp = null;
     if (this.state.tooltipTriangleDown) {
@@ -493,6 +494,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     alignSelf: 'stretch',
     overflow: 'hidden',
+    borderTopColor: '#FFF', 
+    borderTopWidth: 1,
   },
 });
 
